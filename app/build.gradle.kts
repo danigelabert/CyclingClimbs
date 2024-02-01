@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.danigelabert.cyclingclimbs"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.danigelabert.cyclingclimbs"
