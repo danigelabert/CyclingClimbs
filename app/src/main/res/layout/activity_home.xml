@@ -22,7 +22,7 @@
                 android:id="@+id/emailTextView"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:hint="Email" />
+                android:hint="@string/email" />
 
             <Space
                 android:layout_width="match_parent"
@@ -32,18 +32,71 @@
                 android:id="@+id/providerTextView"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:hint="Proveedor" />
+                android:hint="@string/proveedor" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <TextView
+                android:id="@+id/ModifyTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/modifica_les_dades" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <EditText
+                android:id="@+id/nomET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/nom"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <EditText
+                android:id="@+id/edatET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/edat"
+                android:inputType="number"
+                android:minHeight="48dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <EditText
+                android:id="@+id/pesET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/pes"
+                android:inputType="number"
+                android:minHeight="48dp" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="8dp" />
 
             <Button
-                android:id="@+id/logOutButton"
+                android:id="@+id/modifyButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="CERRAR SESIÓN" />
+                android:text="@string/modificar" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

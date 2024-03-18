@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">CyclingClimbs</string>
+    <string name="email">Email</string>
+    <string name="proveedor">Proveedor</string>
+    <string name="modifica_les_dades">Modifica les dades</string>
+    <string name="nom">Nom</string>
+    <string name="edat">Edat</string>
+    <string name="pes">Pes</string>
+    <string name="cerrar_sesi_n">CERRAR SESIÓN</string>
+    <string name="modificar">Modificar</string>
+    <string name="entrar">Entrar</string>
+    <string name="eliminar_user">Eliminar User</string>
+    <string name="datos">Datos</string>
+    <string name="modificarr">Modificar</string>
+    <string name="inserir_documento">Inserir Documento</string>
+    <string name="eliminar_dades_user">Eliminar Dades User</string>
+    <string name="escull_imatge">Escull Imatge</string>
+    <string name="penjar_foto">Penjar Foto</string>
 </resources>

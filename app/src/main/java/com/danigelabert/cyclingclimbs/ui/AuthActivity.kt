@@ -1,12 +1,10 @@
 package com.danigelabert.cyclingclimbs.ui
 
-import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.danigelabert.cyclingclimbs.databinding.ActivityAuthBinding
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 
 class AuthActivity : AppCompatActivity() {
@@ -39,7 +37,7 @@ class AuthActivity : AppCompatActivity() {
                             if (it.isSuccessful) {
                                 showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
                             } else {
-                                showAlert()
+                                funcionsBasiques.showAlert("Error", "Se ha producido un error autenticado al usuario", this)
                             }
                     }
 
@@ -55,24 +53,15 @@ class AuthActivity : AppCompatActivity() {
                         if (it.isSuccessful) {
                             showHome(it.result?.user?.email ?: "", ProviderType.BASIC)
                         } else {
-                            showAlert()
+                            funcionsBasiques.showAlert("Error", "Se ha producido un error autenticado al usuario", this)
                         }
                     }
 
             }
         }
     }
-    private fun showAlert() {
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Error")
-        builder.setMessage("Se ha producido un error autenticado al usuario")
-        builder.setPositiveButton("Aceptar", null)
-        val dialog: AlertDialog = builder.create()
-        dialog.show()
-    }
-
     private fun showHome(email: String, provider: ProviderType){
-        val homeIntent = Intent(this, HomeActivity::class.java).apply{
+        val homeIntent = Intent(this, FirstActivity::class.java).apply{
             putExtra("email", email)
             putExtra("provider", provider.name)
         }
