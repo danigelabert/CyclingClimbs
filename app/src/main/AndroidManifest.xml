@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CyclingClimbs"
         tools:targetApi="31">
         <activity
+            android:name=".ui.UsersActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.FirstActivity"
             android:exported="false" />
         <activity

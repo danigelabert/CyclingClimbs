@@ -24,7 +24,7 @@ class funcionsBasiques {
                 "nom" to user.nom,
                 "edat" to user.edat,
                 "pes" to user.pes,
-                "image" to user.img
+                "image" to user.image
             )
 
             db.collection("users")
