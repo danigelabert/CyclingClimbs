@@ -29,11 +29,13 @@ class HomeActivity : AppCompatActivity() {
         binding.providerTextView.text=provider
 
         binding.modifyButton.setOnClickListener(){
-            funcionsBasiques.modifyUser(db, User(email.toString(),
-                provider.toString(),
-                binding.nomET.text.toString(),
+            funcionsBasiques.modifyUser(db, User(
                 binding.edatET.text.toString(),
-                binding.pesET.text.toString()),
+                email.toString(),
+                "",
+                binding.nomET.text.toString(),
+                binding.pesET.text.toString(),
+                provider.toString()),
                 this
             )
         }
