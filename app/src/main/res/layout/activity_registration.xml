@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#b0d669"
-    tools:context=".RegistrationActivity">
+    tools:context=".ui.RegistrationActivity">
 
     <TextView
         android:id="@+id/textView"

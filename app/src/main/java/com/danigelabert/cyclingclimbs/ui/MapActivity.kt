@@ -60,7 +60,6 @@ class MapActivity : AppCompatActivity() {
 
         mMap.overlays.add(mMyLocationOverlay)
 
-        // Initialize mapListener here
         mapListener = object : MapListener {
             override fun onScroll(event: ScrollEvent?): Boolean {
                 // Implement your logic here
@@ -68,16 +67,13 @@ class MapActivity : AppCompatActivity() {
             }
 
             override fun onZoom(event: ZoomEvent?): Boolean {
-                // Implement your logic here
                 return false
             }
         }
 
         mMap.addMapListener(mapListener)
 
-        // Check if MyLocationOverlay has a valid location
         if (mMyLocationOverlay.lastFix == null) {
-            // If no valid location, set the map's center to default coordinates
             controller.setCenter(defaultLocation)
             controller.setZoom(10.0)
         }
@@ -91,10 +87,8 @@ class MapActivity : AppCompatActivity() {
         poiItems.add(OverlayItem("St. Martí Sacalm", "8.3km / 7.3% / 606m", GeoPoint(42.011760, 2.595772)))
         poiItems.add(OverlayItem("RocaCorba", "12.3km / 6.5% / 797m", GeoPoint(42.097968, 2.741137)))
 
-        // Crear un Overlay de iconos para los puntos de interés
         val poiMarkers = ItemizedIconOverlay(this, poiItems, object : ItemizedIconOverlay.OnItemGestureListener<OverlayItem> {
             override fun onItemSingleTapUp(index: Int, item: OverlayItem?): Boolean {
-                // Acción al hacer clic en un icono
                 val intent = Intent(this@MapActivity, DetallePuntoActivity::class.java)
                 intent.putExtra("titulo", item?.title)
                 intent.putExtra("descripcion", item?.snippet)
