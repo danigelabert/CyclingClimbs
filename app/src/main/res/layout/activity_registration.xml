@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0d669"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Registrarse"
+        android:textColor="#eb2626"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_margin="16dp"
+        android:hint="Correo electrónico"
+        android:backgroundTint="#eb2626"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_margin="16dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:backgroundTint="#eb2626"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_margin="16dp"
+        android:hint="Nombre"
+        android:backgroundTint="#eb2626"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/apellidoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombreEditText"
+        android:layout_margin="16dp"
+        android:hint="Apellido"
+        android:backgroundTint="#eb2626"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apellidoEditText"
+        android:layout_margin="16dp"
+        android:text="Registrarse"
+        android:textColor="#ffffff"
+        android:background="#eb2626"/>
+
+</RelativeLayout>

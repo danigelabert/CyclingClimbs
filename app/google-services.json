@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "203894775035",
-    "project_id": "cyclingclimbs-6afec",
-    "storage_bucket": "cyclingclimbs-6afec.appspot.com"
+    "project_number": "663867444266",
+    "project_id": "cyclingclimbsapp",
+    "storage_bucket": "cyclingclimbsapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:203894775035:android:f8ad339b0e3a862e89e45e",
+        "mobilesdk_app_id": "1:663867444266:android:b18c1232bdf6b325a9c753",
         "android_client_info": {
           "package_name": "com.danigelabert.cyclingclimbs"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD9LcEoWuKoFtHyziO9yFpLxVcmxzMxb8A"
+          "current_key": "AIzaSyBNiaAQvyAwfXlarM5-eNXNLSpe3vFQr_Y"
         }
       ],
       "services": {
