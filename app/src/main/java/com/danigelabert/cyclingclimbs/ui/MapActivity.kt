@@ -33,6 +33,9 @@ class MapActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMapBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val user = intent.getStringExtra("user")
+
         Configuration.getInstance().load(
             applicationContext,
             getSharedPreferences(getString(R.string.app_name), MODE_PRIVATE)
@@ -92,6 +95,7 @@ class MapActivity : AppCompatActivity() {
                 val intent = Intent(this@MapActivity, DetallePuntoActivity::class.java)
                 intent.putExtra("titulo", item?.title)
                 intent.putExtra("descripcion", item?.snippet)
+                intent.putExtra("user", user)
                 startActivity(intent)
                 return true
             }

@@ -21,7 +21,9 @@ class LoginActivity : AppCompatActivity() {
                     .signInWithEmailAndPassword(binding.emailEditText.text.toString(),
                         binding.passwordEditText.text.toString()).addOnCompleteListener {
                         if (it.isSuccessful) {
-                            startActivity(Intent(this, MapActivity::class.java))
+                            val intent = Intent(this, MapActivity::class.java)
+                            intent.putExtra("user", binding.emailEditText.text.toString())
+                            startActivity(intent)
                         } else {
                             funcionsBasiques.showDialog(3, "Se ha producido un error autenticando al usuario", this)
                         }

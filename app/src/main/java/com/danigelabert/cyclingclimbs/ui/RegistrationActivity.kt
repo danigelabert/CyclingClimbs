@@ -1,5 +1,6 @@
 package com.danigelabert.cyclingclimbs.ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.danigelabert.cyclingclimbs.databinding.ActivityRegistrationBinding
@@ -41,6 +42,8 @@ class RegistrationActivity : AppCompatActivity() {
                                 .set(user)
                                 .addOnSuccessListener {
                                     funcionsBasiques.showDialog(5, "Usuario registrado exitosamente", this)
+                                    val intent = Intent(this, LoginActivity::class.java)
+                                    startActivity(intent)
                                 }
                                 .addOnFailureListener { e ->
                                     funcionsBasiques.showDialog(3, "Error al guardar la información del usuario", this)

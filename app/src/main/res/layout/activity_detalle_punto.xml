@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,5 +34,40 @@
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:src="@drawable/google_logo" />
+
+    <EditText
+        android:id="@+id/etComentario"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivImagen"
+        android:layout_marginTop="16dp"
+        android:hint="Escribe tu comentario aquí"
+        android:inputType="textMultiLine"
+        android:maxLines="5" />
+
+    <Button
+        android:id="@+id/btnEnviarComentario"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etComentario"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="-46dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="32dp"
+        android:layout_toEndOf="@+id/etComentario"
+        android:drawableStart="@drawable/icons8_correcto_50"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text=""
+        app:icon="@drawable/icons8_correcto_100" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSecondList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEnviarComentario"
+        android:layout_marginTop="16dp"/>
 
 </RelativeLayout>
