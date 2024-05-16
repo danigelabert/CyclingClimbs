@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list android:opacity="opaque"
     xmlns:android="http://schemas.android.com/apk/res/android">
-<!--    <item android:drawable="@color/white"/>-->
-<!--    <item-->
-<!--        android:left="20dp"-->
-<!--        android:right="20dp"-->
-<!--        android:top="260dp"-->
-<!--        android:bottom="260dp">-->
+    <item android:drawable="@color/white"/>
+    <item
+        android:left="20dp"
+        android:right="20dp"
+        android:top="260dp"
+        android:bottom="260dp">
         <bitmap android:src="@drawable/captura_de_pantalla_2024_01_22_093933"/>
-<!--    </item>-->
+    </item>
 </layer-list>

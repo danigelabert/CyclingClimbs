@@ -37,9 +37,11 @@
 
     <EditText
         android:id="@+id/etComentario"
-        android:layout_width="322dp"
+        android:layout_width="378dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/ivImagen"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="16dp"
         android:hint="Escribe tu comentario aquí"
         android:inputType="textMultiLine"
@@ -47,21 +49,20 @@
 
     <Button
         android:id="@+id/btnEnviarComentario"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/etComentario"
+        android:layout_width="282dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/etComentario"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="-46dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="32dp"
-        android:layout_toEndOf="@+id/etComentario"
-        android:drawableStart="@drawable/icons8_correcto_50"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
-        android:text=""
-        app:icon="@drawable/icons8_correcto_100" />
+        android:text="Enviar comentario"
+        android:theme="@style/Button.White" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvSecondList"

@@ -1,6 +1,7 @@
 package com.danigelabert.cyclingclimbs.ui
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.danigelabert.cyclingclimbs.databinding.ActivityRegistrationBinding
@@ -18,8 +19,13 @@ class RegistrationActivity : AppCompatActivity() {
         binding = ActivityRegistrationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        binding.registerButton.setBackgroundColor(Color.rgb(137,80,11));
+        binding.registerButton.setTextColor(Color.WHITE);
+
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
+
 
         binding.registerButton.setOnClickListener {
             val email = binding.emailEditText.text.toString()

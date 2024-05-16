@@ -2,8 +2,15 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.CyclingClimbs" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/brown</item>
     </style>
 
     <style name="Theme.CyclingClimbs" parent="Base.Theme.CyclingClimbs" />
+    
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/captura_de_pantalla_2024_01_22_093933</item>
+    </style>
+    <style name="Button.White" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">#BF9D6E</item>
+    </style>
 </resources>

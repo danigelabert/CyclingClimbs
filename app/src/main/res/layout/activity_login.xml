@@ -6,15 +6,32 @@
     android:background="#b0d669"
     tools:context=".ui.LoginActivity">
 
+    <!-- Imagen -->
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="283dp"
+        android:layout_height="279dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="17dp"
+        android:adjustViewBounds="true"
+        android:paddingStart="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/captura_de_pantalla_2024_01_22_093933" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/logoImageView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="Iniciar Sesión"
         android:textColor="#eb2626"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/emailEditText"
@@ -22,10 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
         android:layout_margin="16dp"
-        android:hint="Correo electrónico"
         android:backgroundTint="#eb2626"
         android:textColorHint="#ffffff"
-        android:textColor="#ffffff"/>
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:hint="Correo electrónico"/>
 
     <EditText
         android:id="@+id/passwordEditText"
@@ -33,28 +51,31 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/emailEditText"
         android:layout_margin="16dp"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
         android:backgroundTint="#eb2626"
         android:textColorHint="#ffffff"
-        android:textColor="#ffffff"/>
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/signInButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordEditText"
-        android:layout_margin="16dp"
-        android:text="Iniciar Sesión"
-        android:textColor="#ffffff"
-        android:background="#eb2626"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:theme="@style/Button.White"
+        android:text="Iniciar Sesión"/>
 
     <TextView
         android:id="@+id/registerLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/signInButton"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="¿No tienes una cuenta? Regístrate aquí"
         android:textColor="#ffffff"/>

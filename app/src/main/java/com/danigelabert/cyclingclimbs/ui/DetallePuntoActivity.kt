@@ -1,6 +1,7 @@
 package com.danigelabert.cyclingclimbs.ui
 
 import CommentAdapter
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +33,10 @@ class DetallePuntoActivity : AppCompatActivity() {
 
         binding.tvTitulo.text = titulo
         binding.tvDescripcion.text = descripcion
+
+
+        binding.btnEnviarComentario.setBackgroundColor(Color.rgb(137,80,11));
+        binding.btnEnviarComentario.setTextColor(Color.WHITE);
 
 
 
